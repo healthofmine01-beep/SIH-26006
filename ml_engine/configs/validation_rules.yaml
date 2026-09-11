@@ -1,0 +1,12 @@
+allowed_data_status: [REAL, DERIVED, SIMULATED, UNVERIFIED, TEMPLATE]
+allowed_freight_units: [USD_PER_MT, USD_PER_DAY]
+allowed_currencies: [USD, INR]
+usd_inr_min: 30
+usd_inr_max: 200
+stale_warning_hours: 48
+stale_fail_hours: 720
+extreme_freight_pct_change: 0.35
+quality_weights:
+  fail: 0
+  warning: 0.7
+  pass: 1.0

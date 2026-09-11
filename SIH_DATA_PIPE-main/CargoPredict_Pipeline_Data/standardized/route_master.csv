@@ -1,0 +1,9 @@
+route_id,origin_port_id,destination_port_id,distance_nm,cargo_type,vessel_class,source_origin,is_synthetic
+R001,AUS_HAY,IND_PAR,5200,Coking Coal,Capesize,curated_route_scenarios_from_user_supplied_references,False
+R002,AUS_HAY,IND_VIZ,4900,Coking Coal,Panamax,curated_route_scenarios_from_user_supplied_references,False
+R003,AUS_GLA,IND_DHA,5250,Coking Coal,Kamsarmax,curated_route_scenarios_from_user_supplied_references,False
+R004,AUS_NEW,IND_GAN,5450,Coking Coal,Capesize,curated_route_scenarios_from_user_supplied_references,False
+R005,IDN_SK,IND_PAR,2750,Thermal Coal,Panamax,curated_route_scenarios_from_user_supplied_references,False
+R006,ZAF_RB,IND_VIZ,4600,Coking Coal,Panamax,curated_route_scenarios_from_user_supplied_references,False
+R007,MOZ_NAC,IND_GAN,3300,Coking Coal,Supramax,curated_route_scenarios_from_user_supplied_references,False
+R008,USA_HR,IND_PAR,10400,Coking Coal,Capesize,curated_route_scenarios_from_user_supplied_references,False

@@ -1,0 +1,6 @@
+{
+  "name": "Maritime - Freight Forecasting & Vessel Optimizer",
+  "description": "CargoPredict - Intelligent freight forecasting and bulk vessel charter optimization model from overseas to East Coast of India (SIH 2026 PS 26006).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

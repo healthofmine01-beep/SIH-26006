@@ -1,0 +1,111 @@
+# ============================================================
+# CargoPredict ML Engine — Model Configuration
+# Matched to the CODEXA Member 2 -> Member 3 Data Contract
+# ============================================================
+
+data:
+  date_column: "date"
+  target_columns:            # never combine/convert between these two — contract forbids it
+    usd_per_mt: "freight_rate_usd_per_mt"
+    usd_per_day: "freight_rate_usd_per_day"
+  unit_column: "freight_rate_unit"
+  group_columns: ["route_id", "vessel_type", "freight_rate_unit"]   # per data contract feature grouping rule
+  data_status_column: "data_status"
+  training_eligible_column: "training_eligible"
+  quality_score_column: "data_quality_score"
+
+  files:
+    training_eligible: "data/incoming/CODEXA_M3_Training_Eligible.csv"   # currently 0 rows
+    demo_integration: "data/incoming/CODEXA_M3_Demo_Integration.csv"     # SIMULATED, training_eligible=false always
+    excluded_rows: "data/incoming/CODEXA_M3_Excluded_Rows.csv"           # UNVERIFIED, never used for training
+
+# Horizon note: CargoPredict PPT proposes 14/30/90.
+# The Member2->Member3 data contract explicitly states "Forecast horizons are 7, 14, and 30 days."
+# Using the CONTRACT's 7/14/30 here since it's the operative spec for this data pipeline —
+# reconcile with the PPT's 14/30/90 before the judge demo so the two don't conflict.
+horizons: [7, 14, 30]
+
+# Training eligibility gate — belt-and-suspenders on top of the training_eligible column.
+# Real training additionally requires data_status in this set (SIMULATED/UNVERIFIED/TEMPLATE
+# are never promoted to training regardless of what training_eligible says elsewhere).
+training_allowed_data_status: ["REAL", "DERIVED"]
+
+# Minimum verified rows required, per (route_id, vessel_type, freight_rate_unit, horizon)
+# group, before the engine will fit a real model for that group. Tune once real volume
+# is known — this is a placeholder that will not be met by 0-45 rows.
+min_training_rows_per_group: 200
+
+# Pre-built feature columns already produced by Member 2's features.py — this engine
+# does NOT recompute lags/rolling stats; it consumes them as-is to avoid diverging from
+# the point-in-time / leakage-safe definitions Member 2 already validated.
+feature_columns:
+  - freight_lag_1
+  - freight_lag_7
+  - freight_lag_14
+  - freight_lag_30
+  - freight_rolling_mean_7
+  - freight_rolling_mean_14
+  - freight_rolling_mean_30
+  - freight_rolling_std_7
+  - freight_ema_7
+  - freight_change_7d
+  - bdi_lag_1
+  - bdi_change_7d
+  - bunker_price_lag_1
+  - bunker_change_7d
+  - usd_inr_lag_1
+  - usd_inr_change_7d
+  - commodity_price_lag_1
+  - commodity_price_change_7d
+  - month
+  - quarter
+  - day_of_week
+  - monsoon_flag
+  - cyclone_flag
+  - weather_severity_score
+  - port_congestion_score
+  - route_distance_nm
+  - vessel_capacity_dwt
+  - source_age_days
+  - is_forward_filled
+  # data_quality_score is deliberately NOT a feature — it describes row trustworthiness,
+  # not the market, and won't be knowable in advance for a future date. It's used as a
+  # per-row SAMPLE WEIGHT instead (see quality weighting below).
+
+quality_weighting:
+  # Mirrors validation_rules.yaml's quality_weights (fail=0 / warning=0.7 / pass=1.0).
+  # data_quality_score in the actual files is already on a 0-1 scale; if a 0-100 scale
+  # ever shows up (per the data dictionary's stated unit), the loader auto-detects and
+  # rescales.
+  enabled: true
+
+models:
+  baseline:
+    type: "holt"
+    seasonal_periods: 7
+
+  xgboost:
+    quantiles: [0.10, 0.50, 0.90]
+    params:
+      n_estimators: 300
+      max_depth: 4
+      learning_rate: 0.05
+      subsample: 0.8
+      colsample_bytree: 0.8
+      reg_lambda: 1.0
+
+evaluation:
+  metrics: ["wape", "mae", "rmse", "pinball_loss", "p90_coverage"]
+
+inference:
+  output_schema:
+    - route_id
+    - vessel_type
+    - freight_rate_unit
+    - forecast_horizon
+    - status          # READY | INSUFFICIENT_VERIFIED_TARGET_DATA | SIMULATED_DEMO_ONLY
+    - p10
+    - p50
+    - p90
+    - confidence
+    - message

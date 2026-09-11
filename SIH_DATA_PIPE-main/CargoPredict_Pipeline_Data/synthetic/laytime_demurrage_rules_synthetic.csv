@@ -1,0 +1,9 @@
+port_id,cargo_type,allowed_laytime_hours,demurrage_usd_per_day,despatch_usd_per_day,laytime_rule,effective_from,is_synthetic,source_origin,synthetic_seed
+IND_PAR,Coking Coal,72,28000,14000,WWD_SHINC,2026-01-01,True,synthetic_scenario_generator,26006
+IND_PAR,Thermal Coal,72,28000,14000,WWD_SHINC,2026-01-01,True,synthetic_scenario_generator,26006
+IND_DHA,Coking Coal,72,28000,14000,WWD_SHINC,2026-01-01,True,synthetic_scenario_generator,26006
+IND_DHA,Thermal Coal,72,28000,14000,WWD_SHINC,2026-01-01,True,synthetic_scenario_generator,26006
+IND_VIZ,Coking Coal,72,28000,14000,WWD_SHINC,2026-01-01,True,synthetic_scenario_generator,26006
+IND_VIZ,Thermal Coal,72,28000,14000,WWD_SHINC,2026-01-01,True,synthetic_scenario_generator,26006
+IND_GAN,Coking Coal,72,28000,14000,WWD_SHINC,2026-01-01,True,synthetic_scenario_generator,26006
+IND_GAN,Thermal Coal,72,28000,14000,WWD_SHINC,2026-01-01,True,synthetic_scenario_generator,26006

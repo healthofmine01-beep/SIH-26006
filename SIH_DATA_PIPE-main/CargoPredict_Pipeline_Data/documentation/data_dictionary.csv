@@ -1,0 +1,368 @@
+dataset,column,dtype_sample,description,synthetic_dataset
+ml_freight_daily.csv,date,object,date,True
+ml_freight_daily.csv,route_id,object,route id,True
+ml_freight_daily.csv,vessel_class,object,vessel class,True
+ml_freight_daily.csv,cargo_type,object,cargo type,True
+ml_freight_daily.csv,freight_rate_usd_per_mt,float64,freight rate usd per mt,True
+ml_freight_daily.csv,rate_unit,object,rate unit,True
+ml_freight_daily.csv,source_origin,object,source origin,True
+ml_freight_daily.csv,is_synthetic,bool,is synthetic,True
+ml_freight_daily.csv,synthetic_seed,int64,synthetic seed,True
+ml_freight_daily.csv,origin_port_id,object,origin port id,True
+ml_freight_daily.csv,destination_port_id,object,destination port id,True
+ml_freight_daily.csv,distance_nm,int64,distance nm,True
+ml_freight_daily.csv,bdi_proxy,float64,bdi proxy,True
+ml_freight_daily.csv,vlsfo_singapore_usd_per_mt,float64,vlsfo singapore usd per mt,True
+ml_freight_daily.csv,usd_inr,float64,usd inr,True
+ml_freight_daily.csv,vessels_waiting,int64,vessels waiting,True
+ml_freight_daily.csv,average_wait_hours,float64,average wait hours,True
+ml_freight_daily.csv,congestion_score,float64,congestion score,True
+ml_freight_daily.csv,wave_height_m,float64,wave height m,True
+ml_freight_daily.csv,wind_speed_kph,float64,wind speed kph,True
+ml_freight_daily.csv,rainfall_mm,float64,rainfall mm,True
+ml_freight_daily.csv,storm_flag,int64,storm flag,True
+ml_freight_daily.csv,monsoon_flag,int64,monsoon flag,True
+ml_freight_daily.csv,available_vessel_count,int64,available vessel count,True
+ml_freight_daily.csv,ballast_vessel_count,int64,ballast vessel count,True
+ml_freight_daily.csv,freight_lag_1,float64,freight lag 1,True
+ml_freight_daily.csv,freight_lag_7,float64,freight lag 7,True
+ml_freight_daily.csv,freight_lag_14,float64,freight lag 14,True
+ml_freight_daily.csv,freight_lag_30,float64,freight lag 30,True
+ml_freight_daily.csv,freight_rolling_mean_7,float64,freight rolling mean 7,True
+ml_freight_daily.csv,freight_rolling_mean_14,float64,freight rolling mean 14,True
+ml_freight_daily.csv,freight_rolling_mean_30,float64,freight rolling mean 30,True
+ml_freight_daily.csv,freight_rolling_std_7,float64,freight rolling std 7,True
+ml_freight_daily.csv,fuel_change_7d_pct,float64,fuel change 7d pct,True
+ml_freight_daily.csv,usd_inr_change_7d_pct,float64,usd inr change 7d pct,True
+ml_freight_daily.csv,day_of_week,int64,day of week,True
+ml_freight_daily.csv,month,int64,month,True
+ml_freight_daily.csv,quarter,int64,quarter,True
+ml_freight_daily.csv,data_quality_score,float64,data quality score,True
+bunker_fuel_prices.csv,date,object,date,False
+bunker_fuel_prices.csv,port_or_hub,object,port or hub,False
+bunker_fuel_prices.csv,country,object,country,False
+bunker_fuel_prices.csv,fuel_grade,object,fuel grade,False
+bunker_fuel_prices.csv,price_usd_per_mt,float64,price usd per mt,False
+bunker_fuel_prices.csv,price_type,object,price type,False
+bunker_fuel_prices.csv,frequency,object,frequency,False
+bunker_fuel_prices.csv,source_type,object,source type,False
+bunker_fuel_prices.csv,source_reference,object,source reference,False
+bunker_fuel_prices.csv,source_url,object,source url,False
+bunker_fuel_prices.csv,notes,object,notes,False
+bunker_fuel_prices.csv,low_usd_per_mt,float64,low usd per mt,False
+bunker_fuel_prices.csv,high_usd_per_mt,float64,high usd per mt,False
+bunker_fuel_prices.csv,availability,object,availability,False
+bunker_fuel_prices.csv,currency,object,currency,False
+bunker_fuel_prices.csv,original_price,float64,original price,False
+bunker_fuel_prices.csv,sulphur_content,float64,sulphur content,False
+bunker_fuel_prices.csv,source_origin,object,source origin,False
+bunker_fuel_prices.csv,is_synthetic,bool,is synthetic,False
+commodity_prices.csv,commodity,object,commodity,False
+commodity_prices.csv,date,object,date,False
+commodity_prices.csv,price,float64,price,False
+commodity_prices.csv,currency,object,currency,False
+commodity_prices.csv,unit,object,unit,False
+commodity_prices.csv,market_or_region,object,market or region,False
+commodity_prices.csv,vessel_class,object,vessel class,False
+commodity_prices.csv,shipping_bulk_type,object,shipping bulk type,False
+commodity_prices.csv,source_name,object,source name,False
+commodity_prices.csv,source_url,object,source url,False
+commodity_prices.csv,source_type,object,source type,False
+commodity_prices.csv,verification_status,object,verification status,False
+commodity_prices.csv,notes,object,notes,False
+commodity_prices.csv,source_origin,object,source origin,False
+commodity_prices.csv,is_synthetic,bool,is synthetic,False
+economic_indicators.csv,indicator_name,object,indicator name,False
+economic_indicators.csv,date,object,date,False
+economic_indicators.csv,value,float64,value,False
+economic_indicators.csv,unit,object,unit,False
+economic_indicators.csv,frequency,object,frequency,False
+economic_indicators.csv,country_or_region,object,country or region,False
+economic_indicators.csv,shipping_relevance,object,shipping relevance,False
+economic_indicators.csv,source_name,object,source name,False
+economic_indicators.csv,source_url,object,source url,False
+economic_indicators.csv,source_type,object,source type,False
+economic_indicators.csv,verification_status,object,verification status,False
+economic_indicators.csv,notes,object,notes,False
+economic_indicators.csv,source_origin,object,source origin,False
+economic_indicators.csv,is_synthetic,bool,is synthetic,False
+freight_indices.csv,date,object,date,False
+freight_indices.csv,index_name,object,index name,False
+freight_indices.csv,index_code,object,index code,False
+freight_indices.csv,index_value,float64,index value,False
+freight_indices.csv,unit,object,unit,False
+freight_indices.csv,frequency,object,frequency,False
+freight_indices.csv,source_type,object,source type,False
+freight_indices.csv,source_reference,object,source reference,False
+freight_indices.csv,source_url,object,source url,False
+freight_indices.csv,notes,object,notes,False
+freight_indices.csv,source_origin,object,source origin,False
+freight_indices.csv,is_synthetic,bool,is synthetic,False
+freight_rates_observed.csv,date,object,date,False
+freight_rates_observed.csv,origin_country,object,origin country,False
+freight_rates_observed.csv,origin_port,object,origin port,False
+freight_rates_observed.csv,destination_country,object,destination country,False
+freight_rates_observed.csv,destination_port,object,destination port,False
+freight_rates_observed.csv,route,object,route,False
+freight_rates_observed.csv,cargo_type,object,cargo type,False
+freight_rates_observed.csv,cargo_quantity_mt,int64,cargo quantity mt,False
+freight_rates_observed.csv,vessel_class,object,vessel class,False
+freight_rates_observed.csv,vessel_dwt,int64,vessel dwt,False
+freight_rates_observed.csv,freight_rate,float64,freight rate,False
+freight_rates_observed.csv,rate_unit,object,rate unit,False
+freight_rates_observed.csv,currency,object,currency,False
+freight_rates_observed.csv,rate_basis,object,rate basis,False
+freight_rates_observed.csv,source,object,source,False
+freight_rates_observed.csv,source_url,object,source url,False
+freight_rates_observed.csv,data_period,object,data period,False
+freight_rates_observed.csv,notes,object,notes,False
+freight_rates_observed.csv,source_origin,object,source origin,False
+freight_rates_observed.csv,is_synthetic,bool,is synthetic,False
+port_congestion_reference.csv,port,object,port,False
+port_congestion_reference.csv,period,object,period,False
+port_congestion_reference.csv,data_scope,object,data scope,False
+port_congestion_reference.csv,pre_berthing_detention_hours,float64,pre berthing detention hours,False
+port_congestion_reference.csv,pre_berthing_detention_port_account_hours,float64,pre berthing detention port account hours,False
+port_congestion_reference.csv,average_turnaround_time_hours,float64,average turnaround time hours,False
+port_congestion_reference.csv,median_waiting_time_days,float64,median waiting time days,False
+port_congestion_reference.csv,vessels_waiting,float64,vessels waiting,False
+port_congestion_reference.csv,congestion_category,object,congestion category,False
+port_congestion_reference.csv,source,object,source,False
+port_congestion_reference.csv,source_url,object,source url,False
+port_congestion_reference.csv,verification_status,object,verification status,False
+port_congestion_reference.csv,notes,object,notes,False
+port_congestion_reference.csv,ps_relevance,object,ps relevance,False
+port_congestion_reference.csv,data_quality_rule,object,data quality rule,False
+port_congestion_reference.csv,scope_note,object,scope note,False
+port_congestion_reference.csv,source_origin,object,source origin,False
+port_congestion_reference.csv,is_synthetic,bool,is synthetic,False
+port_master.csv,port_id,object,port id,False
+port_master.csv,port_name,object,port name,False
+port_master.csv,country,object,country,False
+port_master.csv,source_origin,object,source origin,False
+port_master.csv,is_synthetic,bool,is synthetic,False
+port_specifications.csv,country,object,country,False
+port_specifications.csv,port,object,port,False
+port_specifications.csv,terminal_or_berth,object,terminal or berth,False
+port_specifications.csv,operation,object,operation,False
+port_specifications.csv,cargo,object,cargo,False
+port_specifications.csv,max_loa_m,float64,max loa m,False
+port_specifications.csv,max_beam_m,float64,max beam m,False
+port_specifications.csv,max_draft_m,float64,max draft m,False
+port_specifications.csv,handling_rate_tph,float64,handling rate tph,False
+port_specifications.csv,constraints_or_notes,object,constraints or notes,False
+port_specifications.csv,source_name,object,source name,False
+port_specifications.csv,source_url,object,source url,False
+port_specifications.csv,source_quality,object,source quality,False
+port_specifications.csv,source_verified_date,object,source verified date,False
+port_specifications.csv,verification_status,object,verification status,False
+port_specifications.csv,source_origin,object,source origin,False
+port_specifications.csv,is_synthetic,bool,is synthetic,False
+route_master.csv,route_id,object,route id,False
+route_master.csv,origin_port_id,object,origin port id,False
+route_master.csv,destination_port_id,object,destination port id,False
+route_master.csv,distance_nm,int64,distance nm,False
+route_master.csv,cargo_type,object,cargo type,False
+route_master.csv,vessel_class,object,vessel class,False
+route_master.csv,source_origin,object,source origin,False
+route_master.csv,is_synthetic,bool,is synthetic,False
+trade_routes.csv,origin_country,object,origin country,False
+trade_routes.csv,origin_port,object,origin port,False
+trade_routes.csv,destination_port,object,destination port,False
+trade_routes.csv,cargo,object,cargo,False
+trade_routes.csv,sea_distance_nm,int64,sea distance nm,False
+trade_routes.csv,transit_time,object,transit time,False
+trade_routes.csv,route_evidence,object,route evidence,False
+trade_routes.csv,verification_status,object,verification status,False
+trade_routes.csv,source_name,object,source name,False
+trade_routes.csv,source_url,object,source url,False
+trade_routes.csv,distance_status,object,distance status,False
+trade_routes.csv,transit_status,object,transit status,False
+trade_routes.csv,ps_alignment,object,ps alignment,False
+trade_routes.csv,notes,object,notes,False
+trade_routes.csv,sea_distance_nm_estimated,float64,sea distance nm estimated,False
+trade_routes.csv,transit_time_days_estimated_12kt,float64,transit time days estimated 12kt,False
+trade_routes.csv,derived_data_status,object,derived data status,False
+trade_routes.csv,data_integrity_note,object,data integrity note,False
+trade_routes.csv,source_origin,object,source origin,False
+trade_routes.csv,is_synthetic,bool,is synthetic,False
+vessel_specifications.csv,vessel_class,object,vessel class,False
+vessel_specifications.csv,vessel_subclass,object,vessel subclass,False
+vessel_specifications.csv,representative_vessel_name,object,representative vessel name,False
+vessel_specifications.csv,imo_number,float64,imo number,False
+vessel_specifications.csv,vessel_type,object,vessel type,False
+vessel_specifications.csv,typical_dwt_min,int64,typical dwt min,False
+vessel_specifications.csv,typical_dwt_max,int64,typical dwt max,False
+vessel_specifications.csv,representative_dwt,int64,representative dwt,False
+vessel_specifications.csv,gross_tonnage_gt,int64,gross tonnage gt,False
+vessel_specifications.csv,net_tonnage_nt,int64,net tonnage nt,False
+vessel_specifications.csv,length_overall_m,float64,length overall m,False
+vessel_specifications.csv,beam_m,float64,beam m,False
+vessel_specifications.csv,depth_m,float64,depth m,False
+vessel_specifications.csv,design_draft_m,float64,design draft m,False
+vessel_specifications.csv,maximum_draft_m,float64,maximum draft m,False
+vessel_specifications.csv,air_draft_m,float64,air draft m,False
+vessel_specifications.csv,cargo_hold_count,int64,cargo hold count,False
+vessel_specifications.csv,cargo_hold_capacity_m3,int64,cargo hold capacity m3,False
+vessel_specifications.csv,cargo_capacity_tonnes,int64,cargo capacity tonnes,False
+vessel_specifications.csv,grain_capacity_m3,int64,grain capacity m3,False
+vessel_specifications.csv,bale_capacity_m3,int64,bale capacity m3,False
+vessel_specifications.csv,service_speed_knots,float64,service speed knots,False
+vessel_specifications.csv,maximum_speed_knots,float64,maximum speed knots,False
+vessel_specifications.csv,main_engine_type,object,main engine type,False
+vessel_specifications.csv,main_engine_model,object,main engine model,False
+vessel_specifications.csv,engine_power_kw,int64,engine power kw,False
+vessel_specifications.csv,fuel_type,object,fuel type,False
+vessel_specifications.csv,fuel_consumption_tonnes_per_day,float64,fuel consumption tonnes per day,False
+vessel_specifications.csv,fuel_consumption_at_speed_knots,float64,fuel consumption at speed knots,False
+vessel_specifications.csv,ballast_consumption_tonnes_per_day,float64,ballast consumption tonnes per day,False
+vessel_specifications.csv,laden_consumption_tonnes_per_day,float64,laden consumption tonnes per day,False
+vessel_specifications.csv,number_of_cranes,int64,number of cranes,False
+vessel_specifications.csv,crane_capacity_tonnes,float64,crane capacity tonnes,False
+vessel_specifications.csv,grab_capacity_m3,float64,grab capacity m3,False
+vessel_specifications.csv,self_unloading_capability,object,self unloading capability,False
+vessel_specifications.csv,gearless_or_geared,object,gearless or geared,False
+vessel_specifications.csv,typical_cargoes,object,typical cargoes,False
+vessel_specifications.csv,port_draft_suitability,object,port draft suitability,False
+vessel_specifications.csv,canal_restrictions_or_constraints,object,canal restrictions or constraints,False
+vessel_specifications.csv,typical_operating_routes,object,typical operating routes,False
+vessel_specifications.csv,india_port_suitability,object,india port suitability,False
+vessel_specifications.csv,suitable_indian_ports,object,suitable indian ports,False
+vessel_specifications.csv,source_reference,object,source reference,False
+vessel_specifications.csv,source_type,object,source type,False
+vessel_specifications.csv,verification_status,object,verification status,False
+vessel_specifications.csv,source_origin,object,source origin,False
+vessel_specifications.csv,is_synthetic,bool,is synthetic,False
+weather_climatology.csv,location,object,location,False
+weather_climatology.csv,month,object,month,False
+weather_climatology.csv,year,object,year,False
+weather_climatology.csv,data_frequency,object,data frequency,False
+weather_climatology.csv,climatology_period,object,climatology period,False
+weather_climatology.csv,mean_min_temperature_c,float64,mean min temperature c,False
+weather_climatology.csv,mean_max_temperature_c,float64,mean max temperature c,False
+weather_climatology.csv,mean_rainfall_mm,float64,mean rainfall mm,False
+weather_climatology.csv,mean_rainy_days,float64,mean rainy days,False
+weather_climatology.csv,mean_hail_days,float64,mean hail days,False
+weather_climatology.csv,mean_thunder_days,float64,mean thunder days,False
+weather_climatology.csv,mean_fog_days,float64,mean fog days,False
+weather_climatology.csv,mean_squall_days,float64,mean squall days,False
+weather_climatology.csv,wind_speed_mps,float64,wind speed mps,False
+weather_climatology.csv,wave_height_m,float64,wave height m,False
+weather_climatology.csv,cyclone_frequency,float64,cyclone frequency,False
+weather_climatology.csv,adverse_weather_days,float64,adverse weather days,False
+weather_climatology.csv,operational_impact,object,operational impact,False
+weather_climatology.csv,source_name,object,source name,False
+weather_climatology.csv,source_url,object,source url,False
+weather_climatology.csv,source_type,object,source type,False
+weather_climatology.csv,verification_status,object,verification status,False
+weather_climatology.csv,requested_period,object,requested period,False
+weather_climatology.csv,record_status,object,record status,False
+weather_climatology.csv,validation_note,object,validation note,False
+weather_climatology.csv,notes,object,notes,False
+weather_climatology.csv,source_origin,object,source origin,False
+weather_climatology.csv,is_synthetic,bool,is synthetic,False
+charter_contract_quotes_synthetic.csv,quote_date,object,quote date,True
+charter_contract_quotes_synthetic.csv,route_id,object,route id,True
+charter_contract_quotes_synthetic.csv,vessel_class,object,vessel class,True
+charter_contract_quotes_synthetic.csv,contract_type,object,contract type,True
+charter_contract_quotes_synthetic.csv,quoted_rate_usd_per_mt,float64,quoted rate usd per mt,True
+charter_contract_quotes_synthetic.csv,contract_months,int64,contract months,True
+charter_contract_quotes_synthetic.csv,is_synthetic,bool,is synthetic,True
+charter_contract_quotes_synthetic.csv,source_origin,object,source origin,True
+charter_contract_quotes_synthetic.csv,synthetic_seed,int64,synthetic seed,True
+daily_ais_vessel_supply_synthetic.csv,date,object,date,True
+daily_ais_vessel_supply_synthetic.csv,route_id,object,route id,True
+daily_ais_vessel_supply_synthetic.csv,vessel_class,object,vessel class,True
+daily_ais_vessel_supply_synthetic.csv,available_vessel_count,int64,available vessel count,True
+daily_ais_vessel_supply_synthetic.csv,ballast_vessel_count,int64,ballast vessel count,True
+daily_ais_vessel_supply_synthetic.csv,is_synthetic,bool,is synthetic,True
+daily_ais_vessel_supply_synthetic.csv,source_origin,object,source origin,True
+daily_ais_vessel_supply_synthetic.csv,synthetic_seed,int64,synthetic seed,True
+daily_berth_availability_synthetic.csv,date,object,date,True
+daily_berth_availability_synthetic.csv,port_id,object,port id,True
+daily_berth_availability_synthetic.csv,berth_id,object,berth id,True
+daily_berth_availability_synthetic.csv,available_flag,bool,available flag,True
+daily_berth_availability_synthetic.csv,maintenance_flag,bool,maintenance flag,True
+daily_berth_availability_synthetic.csv,expected_queue_hours,float64,expected queue hours,True
+daily_berth_availability_synthetic.csv,is_synthetic,bool,is synthetic,True
+daily_berth_availability_synthetic.csv,source_origin,object,source origin,True
+daily_berth_availability_synthetic.csv,synthetic_seed,int64,synthetic seed,True
+daily_market_drivers_synthetic.csv,date,object,date,True
+daily_market_drivers_synthetic.csv,bdi_proxy,float64,bdi proxy,True
+daily_market_drivers_synthetic.csv,vlsfo_singapore_usd_per_mt,float64,vlsfo singapore usd per mt,True
+daily_market_drivers_synthetic.csv,usd_inr,float64,usd inr,True
+daily_market_drivers_synthetic.csv,source_origin,object,source origin,True
+daily_market_drivers_synthetic.csv,is_synthetic,bool,is synthetic,True
+daily_market_drivers_synthetic.csv,synthetic_seed,int64,synthetic seed,True
+daily_port_congestion_synthetic.csv,date,object,date,True
+daily_port_congestion_synthetic.csv,port_id,object,port id,True
+daily_port_congestion_synthetic.csv,vessels_waiting,int64,vessels waiting,True
+daily_port_congestion_synthetic.csv,average_wait_hours,float64,average wait hours,True
+daily_port_congestion_synthetic.csv,congestion_score,float64,congestion score,True
+daily_port_congestion_synthetic.csv,is_synthetic,bool,is synthetic,True
+daily_port_congestion_synthetic.csv,source_origin,object,source origin,True
+daily_port_congestion_synthetic.csv,synthetic_seed,int64,synthetic seed,True
+daily_port_weather_synthetic.csv,date,object,date,True
+daily_port_weather_synthetic.csv,port_id,object,port id,True
+daily_port_weather_synthetic.csv,wave_height_m,float64,wave height m,True
+daily_port_weather_synthetic.csv,wind_speed_kph,float64,wind speed kph,True
+daily_port_weather_synthetic.csv,rainfall_mm,float64,rainfall mm,True
+daily_port_weather_synthetic.csv,storm_flag,int64,storm flag,True
+daily_port_weather_synthetic.csv,monsoon_flag,int64,monsoon flag,True
+daily_port_weather_synthetic.csv,is_synthetic,bool,is synthetic,True
+daily_port_weather_synthetic.csv,source_origin,object,source origin,True
+daily_port_weather_synthetic.csv,synthetic_seed,int64,synthetic seed,True
+daily_tide_ukc_synthetic.csv,date,object,date,True
+daily_tide_ukc_synthetic.csv,port_id,object,port id,True
+daily_tide_ukc_synthetic.csv,mean_tide_height_m,float64,mean tide height m,True
+daily_tide_ukc_synthetic.csv,high_tide_height_m,float64,high tide height m,True
+daily_tide_ukc_synthetic.csv,required_ukc_m,float64,required ukc m,True
+daily_tide_ukc_synthetic.csv,is_synthetic,bool,is synthetic,True
+daily_tide_ukc_synthetic.csv,source_origin,object,source origin,True
+daily_tide_ukc_synthetic.csv,synthetic_seed,int64,synthetic seed,True
+fixture_activity_synthetic.csv,fixture_batch_id,object,fixture batch id,True
+fixture_activity_synthetic.csv,date,object,date,True
+fixture_activity_synthetic.csv,route_id,object,route id,True
+fixture_activity_synthetic.csv,vessel_class,object,vessel class,True
+fixture_activity_synthetic.csv,fixture_count,int64,fixture count,True
+fixture_activity_synthetic.csv,is_synthetic,bool,is synthetic,True
+fixture_activity_synthetic.csv,source_origin,object,source origin,True
+fixture_activity_synthetic.csv,synthetic_seed,int64,synthetic seed,True
+laytime_demurrage_rules_synthetic.csv,port_id,object,port id,True
+laytime_demurrage_rules_synthetic.csv,cargo_type,object,cargo type,True
+laytime_demurrage_rules_synthetic.csv,allowed_laytime_hours,int64,allowed laytime hours,True
+laytime_demurrage_rules_synthetic.csv,demurrage_usd_per_day,int64,demurrage usd per day,True
+laytime_demurrage_rules_synthetic.csv,despatch_usd_per_day,int64,despatch usd per day,True
+laytime_demurrage_rules_synthetic.csv,laytime_rule,object,laytime rule,True
+laytime_demurrage_rules_synthetic.csv,effective_from,object,effective from,True
+laytime_demurrage_rules_synthetic.csv,is_synthetic,bool,is synthetic,True
+laytime_demurrage_rules_synthetic.csv,source_origin,object,source origin,True
+laytime_demurrage_rules_synthetic.csv,synthetic_seed,int64,synthetic seed,True
+monthly_cargo_trade_flows_synthetic.csv,month,object,month,True
+monthly_cargo_trade_flows_synthetic.csv,route_id,object,route id,True
+monthly_cargo_trade_flows_synthetic.csv,commodity,object,commodity,True
+monthly_cargo_trade_flows_synthetic.csv,quantity_mt,float64,quantity mt,True
+monthly_cargo_trade_flows_synthetic.csv,trade_flow,object,trade flow,True
+monthly_cargo_trade_flows_synthetic.csv,is_synthetic,bool,is synthetic,True
+monthly_cargo_trade_flows_synthetic.csv,source_origin,object,source origin,True
+monthly_cargo_trade_flows_synthetic.csv,synthetic_seed,int64,synthetic seed,True
+port_costs_synthetic.csv,port_id,object,port id,True
+port_costs_synthetic.csv,port_dues_usd,int64,port dues usd,True
+port_costs_synthetic.csv,pilotage_usd,int64,pilotage usd,True
+port_costs_synthetic.csv,towage_usd,int64,towage usd,True
+port_costs_synthetic.csv,handling_cost_usd_per_mt,float64,handling cost usd per mt,True
+port_costs_synthetic.csv,lightering_cost_usd_per_mt,float64,lightering cost usd per mt,True
+port_costs_synthetic.csv,currency,object,currency,True
+port_costs_synthetic.csv,effective_from,object,effective from,True
+port_costs_synthetic.csv,is_synthetic,bool,is synthetic,True
+port_costs_synthetic.csv,source_origin,object,source origin,True
+port_costs_synthetic.csv,synthetic_seed,int64,synthetic seed,True
+route_freight_rates_synthetic.csv,date,object,date,True
+route_freight_rates_synthetic.csv,route_id,object,route id,True
+route_freight_rates_synthetic.csv,vessel_class,object,vessel class,True
+route_freight_rates_synthetic.csv,cargo_type,object,cargo type,True
+route_freight_rates_synthetic.csv,freight_rate_usd_per_mt,float64,freight rate usd per mt,True
+route_freight_rates_synthetic.csv,rate_unit,object,rate unit,True
+route_freight_rates_synthetic.csv,source_origin,object,source origin,True
+route_freight_rates_synthetic.csv,is_synthetic,bool,is synthetic,True
+route_freight_rates_synthetic.csv,synthetic_seed,int64,synthetic seed,True

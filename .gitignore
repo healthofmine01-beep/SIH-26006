@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Caches and logs
+.pytest_cache/
+*.log
+.DS_Store
+Thumbs.db
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Node & Frontend dependencies
+node_modules/
+dist/
+build/
+.bun/
+
+# Environment configurations (Never commit real credentials)
+.env
+*.env.local
+*.env.*.local
+
+# Temporary / Scratch files
+scratch/
+_cleanup_review/

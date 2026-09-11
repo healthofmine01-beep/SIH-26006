@@ -1,0 +1,16 @@
+dataset,layer,rows,columns,duplicate_rows,missing_cells,status
+economic_indicators.csv,standardized,35,14,0,0,PASS_WITH_SOURCE_VERIFICATION_REQUIRED
+commodity_prices.csv,standardized,76,15,2,64,PASS_WITH_SOURCE_VERIFICATION_REQUIRED
+weather_climatology.csv,standardized,238,28,0,0,PASS_WITH_SOURCE_VERIFICATION_REQUIRED
+freight_indices.csv,standardized,468,12,0,0,PASS_WITH_SOURCE_VERIFICATION_REQUIRED
+port_congestion_reference.csv,standardized,43,18,0,0,PASS_WITH_SOURCE_VERIFICATION_REQUIRED
+port_specifications.csv,standardized,28,17,0,0,PASS_WITH_SOURCE_VERIFICATION_REQUIRED
+trade_routes.csv,standardized,12,20,0,4,PASS_WITH_SOURCE_VERIFICATION_REQUIRED
+freight_rates_observed.csv,standardized,30,20,0,0,PASS_WITH_SOURCE_VERIFICATION_REQUIRED
+vessel_specifications.csv,standardized,32,47,0,11,PASS_WITH_SOURCE_VERIFICATION_REQUIRED
+bunker_fuel_prices.csv,standardized,334,19,0,1300,PASS_WITH_SOURCE_VERIFICATION_REQUIRED
+daily_market_drivers_synthetic.csv,synthetic,2435,7,0,0,PASS_SYNTHETIC
+daily_port_weather_synthetic.csv,synthetic,9740,10,0,0,PASS_SYNTHETIC
+daily_port_congestion_synthetic.csv,synthetic,9740,8,0,0,PASS_SYNTHETIC
+route_freight_rates_synthetic.csv,synthetic,19480,9,0,0,PASS_SYNTHETIC
+ml_freight_daily.csv,ml_ready,19240,39,0,0,PASS_DEMO_ONLY

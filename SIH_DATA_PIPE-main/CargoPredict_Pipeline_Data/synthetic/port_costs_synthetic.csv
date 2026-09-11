@@ -1,0 +1,5 @@
+port_id,port_dues_usd,pilotage_usd,towage_usd,handling_cost_usd_per_mt,lightering_cost_usd_per_mt,currency,effective_from,is_synthetic,source_origin,synthetic_seed
+IND_PAR,165000,42000,18000,1.8,0.55,USD,2026-01-01,True,synthetic_scenario_generator,26006
+IND_DHA,187000,48000,20500,2.05,0.63,USD,2026-01-01,True,synthetic_scenario_generator,26006
+IND_VIZ,209000,54000,23000,2.3,0.71,USD,2026-01-01,True,synthetic_scenario_generator,26006
+IND_GAN,231000,60000,25500,2.55,0.79,USD,2026-01-01,True,synthetic_scenario_generator,26006

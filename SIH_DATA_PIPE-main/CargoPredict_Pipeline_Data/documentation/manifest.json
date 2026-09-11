@@ -1,0 +1,207 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 1729,
+    "sha256": "6f3a98c459c418a5553b3b11febf11d750368c961a09ff70e3946f4ff3913cd4"
+  },
+  {
+    "path": "documentation/data_dictionary.csv",
+    "bytes": 24856,
+    "sha256": "5098a06e7be6645f9c2e0c7b1185a4d965241e04fee56177ac0c8e323fa3a826"
+  },
+  {
+    "path": "documentation/data_quality_report.csv",
+    "bytes": 1269,
+    "sha256": "ff3e04761d2235830f426160df22ea04b306bc1026759fb5b511eae5c7f2c852"
+  },
+  {
+    "path": "documentation/member_2_handoff.md",
+    "bytes": 447,
+    "sha256": "b95289e0af717114b6a31c44b31d2978c8575c7898ad45b79953e5b475a69781"
+  },
+  {
+    "path": "documentation/source_registry.csv",
+    "bytes": 1637,
+    "sha256": "5eb7390055f5957fd457ef0c617d30b8bc8dd44c618cbc5badf8c2709dce3a4e"
+  },
+  {
+    "path": "documentation/synthetic_methodology.md",
+    "bytes": 558,
+    "sha256": "0bcd5b4c04199182808e399fc96225a466446eb93480ea8bc00fb54a7f242917"
+  },
+  {
+    "path": "ml_ready/ml_freight_daily.csv",
+    "bytes": 6278010,
+    "sha256": "919df5e1f472447cb24eab4ba0e7a7b8f2679bf30a69ca92386b9983d810ce47"
+  },
+  {
+    "path": "raw_supplied/BDI BCI BPI BSI.csv",
+    "bytes": 141210,
+    "sha256": "cd8e46f47ae62025b00f2eef2a1d0c2b24b7ef39ca0d496ee656aafb518de676"
+  },
+  {
+    "path": "raw_supplied/Bunker Fuel Prices.csv",
+    "bytes": 97378,
+    "sha256": "162e862082e64325566c3ba60fec4f7c5b52ffa91d512d47618cb7d8003806c3"
+  },
+  {
+    "path": "raw_supplied/Commodity Prices Complete.csv",
+    "bytes": 24614,
+    "sha256": "51d3b8c90b825e3f3dd799a82410cd948489f7f37760571b3a2fa26ac93d6f87"
+  },
+  {
+    "path": "raw_supplied/Economic Indicators Complete.csv",
+    "bytes": 13192,
+    "sha256": "ebb2f7060a66c7a4d05915ade26326d1d9c752ba3e236cba4ef4503e58c8f038"
+  },
+  {
+    "path": "raw_supplied/Freight Rates.csv",
+    "bytes": 10768,
+    "sha256": "f583be924c3c1eb98eea806358faf37c9c9e5785bb9344e71ecca7457a79ec74"
+  },
+  {
+    "path": "raw_supplied/Port Congestion Waiting Time.csv",
+    "bytes": 40474,
+    "sha256": "5b0cd77524a929864711093961905b918a708c5b7c95d00c622d03f41e18cc7b"
+  },
+  {
+    "path": "raw_supplied/Port Terminal Specifications.csv",
+    "bytes": 12899,
+    "sha256": "4dd2afa422c972bd7452ecada2f365bdedc63df0a1d5b3156c8401f8a078bcbc"
+  },
+  {
+    "path": "raw_supplied/Seasonality Weather.csv",
+    "bytes": 169315,
+    "sha256": "c94ea39cb5acd2b48d03e324d2bf018fcabb3811f89f6706441a0294ed65d5a9"
+  },
+  {
+    "path": "raw_supplied/Trade Routes.csv",
+    "bytes": 12019,
+    "sha256": "5b380a0120022d794b42d51b6fe0efafc4af257ecbde50f089ed5f9e5350837f"
+  },
+  {
+    "path": "raw_supplied/Vessel Specifications.csv",
+    "bytes": 21446,
+    "sha256": "0fd020b2320ba78fdeeb9f8b302861739abdc653ed713c833d47b48ff4c19ea2"
+  },
+  {
+    "path": "standardized/bunker_fuel_prices.csv",
+    "bytes": 107758,
+    "sha256": "9778394da3bd5c8ec523027a112a3b6345cb3f2667dca71a5f5fce3339f44a50"
+  },
+  {
+    "path": "standardized/commodity_prices.csv",
+    "bytes": 26392,
+    "sha256": "308be8e83c429d513d17aa873adf2c5e3bf6c2e1f779f6623b83019a05177098"
+  },
+  {
+    "path": "standardized/economic_indicators.csv",
+    "bytes": 14303,
+    "sha256": "f242d430359aed666c4b30b642032409b28f4d8b4ed72c6d57376eeeca54d5a2"
+  },
+  {
+    "path": "standardized/freight_indices.csv",
+    "bytes": 155744,
+    "sha256": "3a9cfc424351ef4d011eac3382cf1b94b25d68518f68f9b86126385a1d621b3c"
+  },
+  {
+    "path": "standardized/freight_rates_observed.csv",
+    "bytes": 11724,
+    "sha256": "b22c6f93a1e6aa82e37febf83e854e137ddf29311a6401a376b1e165ae00259a"
+  },
+  {
+    "path": "standardized/port_congestion_reference.csv",
+    "bytes": 41833,
+    "sha256": "5eb0a2ed32f15102e8aa8a0a54955562d3188f3cca16b96c7433a4d47965cb51"
+  },
+  {
+    "path": "standardized/port_master.csv",
+    "bytes": 963,
+    "sha256": "2950e0b7e6505cf45a8fc09718e5f2b8ad0ddb9c9ab64206e2f50994dbd5df5e"
+  },
+  {
+    "path": "standardized/port_specifications.csv",
+    "bytes": 13793,
+    "sha256": "6bcfdf88b68de23a950c2503b471d5268836867c394f0b6b72c3a490e05ca350"
+  },
+  {
+    "path": "standardized/route_master.csv",
+    "bytes": 960,
+    "sha256": "1e9c94642e00d6f98cf1aa019fcc3d7d7089df96dde97c980202c8b5f70e68bd"
+  },
+  {
+    "path": "standardized/trade_routes.csv",
+    "bytes": 12439,
+    "sha256": "8f6603ea52395e43c9b4f9a53827a98e6e2ae39e46a006d324b0a50f02bc62bd"
+  },
+  {
+    "path": "standardized/vessel_specifications.csv",
+    "bytes": 22464,
+    "sha256": "98de331fcafd21f17fd6ad3a15be60372ea1221b08d1e131cdd7b3eb172bba38"
+  },
+  {
+    "path": "standardized/weather_climatology.csv",
+    "bytes": 176719,
+    "sha256": "316d5b948d149cd8bdf4f79b4580af286682d79bd39caaad6f64a6bdc57ed1f2"
+  },
+  {
+    "path": "synthetic/charter_contract_quotes_synthetic.csv",
+    "bytes": 41407,
+    "sha256": "8ab7cef784dc67f01ac745b1e0811e629a2c97b5035aafd9dd77117e5436140d"
+  },
+  {
+    "path": "synthetic/daily_ais_vessel_supply_synthetic.csv",
+    "bytes": 1369972,
+    "sha256": "645c5750b18c15a19a6a79a37f7a428c89a151a702944a437559d999ecf4b148"
+  },
+  {
+    "path": "synthetic/daily_berth_availability_synthetic.csv",
+    "bytes": 816862,
+    "sha256": "9277c9b23eacf1f0a29d8f5249e01a07f16dcaa54ed33498f2c20e8e0a47de8c"
+  },
+  {
+    "path": "synthetic/daily_market_drivers_synthetic.csv",
+    "bytes": 179115,
+    "sha256": "01546439aa78225f370589c2e9cb782aa6e99b66d8d81c4f7735dfcacef67ac7"
+  },
+  {
+    "path": "synthetic/daily_port_congestion_synthetic.csv",
+    "bytes": 707658,
+    "sha256": "6057433413b1fccc254e458a501820e473937f5161439a80d043719d9964aac8"
+  },
+  {
+    "path": "synthetic/daily_port_weather_synthetic.csv",
+    "bytes": 767963,
+    "sha256": "75c9d87c121cea64d80eff71d483063f1a2a6a7d0e034cc08a902fb7005c8024"
+  },
+  {
+    "path": "synthetic/daily_tide_ukc_synthetic.csv",
+    "bytes": 709162,
+    "sha256": "7ae7965983592da126cd59550ac93da6075b077f414f5078acc8003898a9999e"
+  },
+  {
+    "path": "synthetic/fixture_activity_synthetic.csv",
+    "bytes": 498520,
+    "sha256": "03dd15abbe3d3fcbaaeb60efc783a5fb9da77b7438bcee8b413be275f0c180c7"
+  },
+  {
+    "path": "synthetic/laytime_demurrage_rules_synthetic.csv",
+    "bytes": 926,
+    "sha256": "77175bd15f81e8d3b532afa66d06dba4297ac3c8aa76a6097b02703bdb920548"
+  },
+  {
+    "path": "synthetic/monthly_cargo_trade_flows_synthetic.csv",
+    "bytes": 59264,
+    "sha256": "18d65423d11f661e1444dc6b81fe485693e051b26a450890703e0045154dd9e1"
+  },
+  {
+    "path": "synthetic/port_costs_synthetic.csv",
+    "bytes": 530,
+    "sha256": "397971de670c0ffd22b47c2bc204ea6e0413ecb19c0fbec391911c45edd071e4"
+  },
+  {
+    "path": "synthetic/route_freight_rates_synthetic.csv",
+    "bytes": 1846082,
+    "sha256": "0cf0cfe8384c12304cabdabc1478fedbeee8de567ea42c8b0b3875c07e22e172"
+  }
+]

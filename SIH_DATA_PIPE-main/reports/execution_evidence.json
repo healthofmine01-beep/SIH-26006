@@ -1,0 +1,131 @@
+{
+  "started_at": "2026-09-09T20:05:07.834574+00:00",
+  "runs": [
+    {
+      "run_id": "b19d4bc7-6242-4eea-8d88-5a5c53c5f7e4",
+      "mode": "validate-only",
+      "status": "SUCCESS",
+      "database_status": "NOT_REQUESTED",
+      "constraints": null,
+      "verification": null
+    },
+    {
+      "run_id": "ecdd44e1-06fd-4e3b-8742-dc5484feeb14",
+      "mode": "full-refresh",
+      "status": "SUCCESS",
+      "database_status": "PASS",
+      "constraints": {
+        "unique_key": "PASS",
+        "checks": "PASS",
+        "indexes": "PASS"
+      },
+      "verification": {
+        "row_counts": "PASS",
+        "typed_contents": "PASS",
+        "duplicate_ml_keys": 0,
+        "missing_ml_values": 0,
+        "referential_checks": "PASS"
+      }
+    },
+    {
+      "run_id": "41f1905a-256b-4fbe-b96e-b5655042ea09",
+      "mode": "verify-only",
+      "status": "SUCCESS",
+      "database_status": "PASS",
+      "constraints": {
+        "unique_key": "PASS",
+        "checks": "PASS",
+        "indexes": "PASS"
+      },
+      "verification": {
+        "row_counts": "PASS",
+        "typed_contents": "PASS",
+        "duplicate_ml_keys": 0,
+        "missing_ml_values": 0,
+        "referential_checks": "PASS"
+      }
+    },
+    {
+      "run_id": "bfdccfd1-4759-4c74-8d88-337812558c04",
+      "mode": "full-refresh",
+      "status": "SUCCESS",
+      "database_status": "PASS",
+      "constraints": {
+        "unique_key": "PASS",
+        "checks": "PASS",
+        "indexes": "PASS"
+      },
+      "verification": {
+        "row_counts": "PASS",
+        "typed_contents": "PASS",
+        "duplicate_ml_keys": 0,
+        "missing_ml_values": 0,
+        "referential_checks": "PASS"
+      }
+    },
+    {
+      "run_id": "f5faae44-4695-458c-862f-a5798f2ac718",
+      "mode": "verify-only",
+      "status": "SUCCESS",
+      "database_status": "PASS",
+      "constraints": {
+        "unique_key": "PASS",
+        "checks": "PASS",
+        "indexes": "PASS"
+      },
+      "verification": {
+        "row_counts": "PASS",
+        "typed_contents": "PASS",
+        "duplicate_ml_keys": 0,
+        "missing_ml_values": 0,
+        "referential_checks": "PASS"
+      }
+    }
+  ],
+  "status": "PASS",
+  "invalid_input": {
+    "run_id": "041cb791-2991-490f-94fe-364c9e398800",
+    "flow_state": "Failed",
+    "checks": [
+      "business_rule:freight_rate_usd_per_mt",
+      "checksum_mismatch"
+    ],
+    "audit_status": "FAILURE_WRITTEN"
+  },
+  "previous_table_unchanged_after_failure": true,
+  "final_verification_run_id": "f805e21c-7310-42c5-86cf-c25eaa8c169d",
+  "idempotent_counts": true,
+  "audit_counts": {
+    "pipeline_runs": 6,
+    "table_load_results": 228,
+    "data_quality_results": 355
+  },
+  "database_version": "17.10 (Debian 17.10-0+deb13u1)",
+  "audit_run_statuses": [
+    [
+      "ecdd44e1-06fd-4e3b-8742-dc5484feeb14",
+      "SUCCESS"
+    ],
+    [
+      "41f1905a-256b-4fbe-b96e-b5655042ea09",
+      "SUCCESS"
+    ],
+    [
+      "bfdccfd1-4759-4c74-8d88-337812558c04",
+      "SUCCESS"
+    ],
+    [
+      "f5faae44-4695-458c-862f-a5798f2ac718",
+      "SUCCESS"
+    ],
+    [
+      "041cb791-2991-490f-94fe-364c9e398800",
+      "FAILED"
+    ],
+    [
+      "f805e21c-7310-42c5-86cf-c25eaa8c169d",
+      "SUCCESS"
+    ]
+  ],
+  "completed_at": "2026-09-09T20:10:37.009560+00:00"
+}

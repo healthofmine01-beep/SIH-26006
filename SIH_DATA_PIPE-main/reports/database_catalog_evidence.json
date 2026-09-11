@@ -1,0 +1,76 @@
+{
+  "constraints": [
+    [
+      "_cp_stage_050d83a1204b4e1293a0_date_route_id_vessel_class_key",
+      "UNIQUE (date, route_id, vessel_class)",
+      true
+    ],
+    [
+      "_cp_stage_050d83a1204b4e1293a0_is_synthetic_check",
+      "CHECK ((is_synthetic IS TRUE))",
+      true
+    ],
+    [
+      "cp_check_available_vessel_count",
+      "CHECK ((available_vessel_count >= 0))",
+      true
+    ],
+    [
+      "cp_check_ballast_vessel_count",
+      "CHECK ((ballast_vessel_count >= 0))",
+      true
+    ],
+    [
+      "cp_check_congestion_score",
+      "CHECK (((congestion_score >= (0)::numeric) AND (congestion_score <= (100)::numeric)))",
+      true
+    ],
+    [
+      "cp_check_distance_nm",
+      "CHECK ((distance_nm > 0))",
+      true
+    ],
+    [
+      "cp_check_freight_rate_usd_per_mt",
+      "CHECK ((freight_rate_usd_per_mt > (0)::numeric))",
+      true
+    ],
+    [
+      "cp_check_is_synthetic",
+      "CHECK ((is_synthetic IS TRUE))",
+      true
+    ],
+    [
+      "cp_check_wave_height_m",
+      "CHECK ((wave_height_m >= (0)::numeric))",
+      true
+    ],
+    [
+      "cp_check_wind_speed_kph",
+      "CHECK ((wind_speed_kph >= (0)::numeric))",
+      true
+    ]
+  ],
+  "indexes": [
+    [
+      "_cp_stage_050d83a1204b4e1293a0_date_route_id_vessel_class_key",
+      "CREATE UNIQUE INDEX _cp_stage_050d83a1204b4e1293a0_date_route_id_vessel_class_key ON ml.ml_freight_daily USING btree (date, route_id, vessel_class)"
+    ],
+    [
+      "_cp_stage_050d83a1204b4e1293a0_idx0",
+      "CREATE INDEX _cp_stage_050d83a1204b4e1293a0_idx0 ON ml.ml_freight_daily USING btree (date)"
+    ],
+    [
+      "_cp_stage_050d83a1204b4e1293a0_idx1",
+      "CREATE INDEX _cp_stage_050d83a1204b4e1293a0_idx1 ON ml.ml_freight_daily USING btree (route_id)"
+    ],
+    [
+      "_cp_stage_050d83a1204b4e1293a0_idx2",
+      "CREATE INDEX _cp_stage_050d83a1204b4e1293a0_idx2 ON ml.ml_freight_daily USING btree (vessel_class)"
+    ],
+    [
+      "_cp_stage_050d83a1204b4e1293a0_idx3",
+      "CREATE INDEX _cp_stage_050d83a1204b4e1293a0_idx3 ON ml.ml_freight_daily USING btree (route_id, vessel_class, date)"
+    ]
+  ]
+}

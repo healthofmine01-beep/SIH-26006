@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-09-09T20:12:17.818896+00:00",
+  "readiness": "READY WITH WARNINGS",
+  "gates": {
+    "All 38 registered CSVs present and unchanged": true,
+    "Original source ZIP unchanged": true,
+    "Final validation and Prefect verification succeeded": true,
+    "Two complete loading runs succeeded": true,
+    "Database content, counts, references and constraints passed": true,
+    "ML key has no duplicates or missing values": true,
+    "Synthetic ML flags preserved": true,
+    "Database audit written": true,
+    "Second-run counts idempotent": true,
+    "Invalid candidate preserved the previous table": true,
+    "Unit/integration/Prefect tests passed without skips": true,
+    "Environment files ignored and no configured secrets found in deliverables": true,
+    "No legacy project-name references in project-owned files": true,
+    "Acceptance sequence passed": true,
+    "Beginner documentation and configuration present": true
+  },
+  "tests": {
+    "tests": 63,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "legacy_name_matches": [],
+  "secret_file_matches": [],
+  "source_preservation": true,
+  "archive_preservation": true
+}
